@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hello world</title>
+    <h1>Hello world!</h1>
+  </head>
+  <body>
+
+
+    <script>
+    var ulang= true;
+
+    while (ulang){
+      for (var kes = 2; kes >= 0; kes--){
+    //user
+    var p = prompt ('Pilih angka 1-10\nada 3x kesempatan');
+
+    //komputer
+    var comp = Math.floor (Math.random () * 10)+1 ;
+    var hasil = '';
+
+
+    if (p==comp){
+      hasil = 'Benar !';
+      break;
+    } else if (p <= 5){
+      hasil =  'Angkanya terlalu rendah !\n anda punya ' + kes + 'x' +' kesempatan';
+    } else if (p >= 5 ){
+      hasil =  'Angkanya terlalu tinggi !\n anda punya ' + kes + 'x' + ' kesempatan';
+    } else{
+      hasil = 'Yang anda masukan bukan angka !';
+    }
+    alert ('yang anda masukan ' + hasil);
+  }
+  ulang = confirm('Jawaban yang benar adalah ' + comp + '\n kesempatan anda habis!');
+}
+
+alert ('terima kasih!');
+
+
+    </script>
+
+
+
+
+  </body>
+</html>
