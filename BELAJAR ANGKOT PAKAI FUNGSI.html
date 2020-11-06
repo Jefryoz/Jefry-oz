@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Belajar javascript</title>
+    </head>
+
+    <body>
+        <div id = "wrap"></div>
+        
+        <script> 
+            var angkot = function (sopir,trek,penumpang,kas){
+                this.sopir = sopir;
+                this.trek = trek;
+                this.penumpang = penumpang;
+                this.kas = kas;
+
+                this.tambahPenumpang = function (namaPenumpang){
+                    if (this.penumpang.length == 0){
+                        this.penumpang.push (namaPenumpang);
+                        return this.penumpang;
+                    }else{
+                        for (var i=0; i <this.penumpang.length; i++){
+                            if (this.penumpang[i] == undefined){
+                                this.penumpang[i] = namaPenumpang;
+                                return this.penumpang;
+                            }
+                            else if (penumpang[i] == namaPenumpang){
+                                console.log ('nama penumpang double !');
+                                return this.penumpang;
+                            }
+                            else if (i == this.penumpang.length-1){
+                                this.penumpang.push (namaPenumpang);
+                                return this.penumpang;
+                            }
+                             
+                        }
+                    }
+                }
+
+                this.kurangPenumpang = function (namaPenumpang,bayar){
+                    if(this.penumpang.length == 0){
+                        console.log ('angkot kosong !');
+                        return this.penumpang;
+                    }else {
+                        for (var i = 0; i < this.penumpang.length;i++){
+                            if (this.penumpang[i] == namaPenumpang){
+                                this.penumpang[i] = undefined;
+                                this.kas += bayar;
+                                return this.penumpang;
+                            }else if (i == this.penumpang.length-1){
+                                console.log ('Nama penumpang salah !');
+                                return this.penumpang;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            var angkot1 = new angkot ('Jefry', 'Benkong-sungai panas', [], 0)
+            
+
+        
+        </script>
+        
+    </body>
+
+</html>
