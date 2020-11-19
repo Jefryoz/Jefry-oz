@@ -1,0 +1,178 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* PEMBATAS */
+
+body{
+    background-image: url(bush.png);
+}
+
+.all {
+    margin: auto;
+    width: 800px;
+    
+}
+
+.header{
+    padding: 20px;
+    background-color:#828282;  
+}
+
+.judul {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.judul:hover{
+    color : white;
+}
+
+.list ul li{
+    display: inline-block;
+    margin-top : 15px;
+    padding: 5px;
+}
+
+.list ul li a{
+    text-decoration: none;
+    color: salmon;
+    font-weight: bold;
+}
+
+.list ul li a:hover{
+    color : white;
+}
+
+.img{
+    background-image: url(12.jpg);
+    background-size: cover;
+    height: 280px;
+    background-position: 0px 380px;
+    border-top: 5px solid salmon;
+    border-bottom: 5px solid lightblue;
+}
+
+.content{
+    background-color: gray;
+}
+
+.content .judulartikel {
+    width: 480px;
+    height: 500px;
+    
+    padding: 10px;
+    float: left;
+}
+
+.content .judulartikel h2{
+    margin-top : 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.content .judulartikel .p{
+    font-size: 13px;
+}
+
+.content .judulartikel .p a{
+    text-decoration: none;
+    color: salmon;
+}
+
+.content .judulartikel .p a:hover{
+    
+    color : white;
+}
+
+.content .judulartikel .paragraf{
+    margin-top : 15px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.content .profil {
+    margin-left : 10px;
+    width: 270px;
+    height: 520px;
+    
+    float:left;
+
+}
+
+.profil h2{
+    margin-top: 20px;
+    font-size: 30px;
+    margin-left: 5px;
+    text-decoration: underline;
+}
+
+.img2{
+    background-image: url(123.jpeg);
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    margin-left: 5px;
+    margin-top: 5px;
+    float: left;
+    margin-right: 10px;
+}
+
+.profil p{
+    margin-left: px;
+}
+
+.footer .copyright{
+    padding: 10px;
+    background-color: #757472;
+    
+}
+
+.footer .copyright p {
+    text-align: center;
+}
