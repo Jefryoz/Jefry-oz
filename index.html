@@ -1,62 +1,65 @@
 <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Welcome</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap" rel="stylesheet">
+    </head>
 
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Hello world</title>
-    <h1>Hello world!</h1>
-  </head>
-  <body>
-
-
-    <script>
-        var penumpang = [];
-        var tambahPenumpang = function (namaPenumpang, penumpang){
-          if (penumpang.length == 0){
-            penumpang.push (namaPenumpang);
-
-            return penumpang;
-          } else{
-            for (var i =0; i < penumpang.length; i++){
-              if (penumpang[i] == undefined){
-                penumpang[i] = namaPenumpang;
-                return penumpang;
-
-              } else if (penumpang[i] == namaPenumpang){
-                console.log ('Anda sudah memasukan nama yg sama!');
-                return penumpang;
-
-              }
-              else if ( i == penumpang.length-1){
-                  penumpang.push (namaPenumpang);
-
-                  return penumpang;
-                }
-              }
-            }
-          }
-
-        var kurangPenumpang = function (namaPenumpang, penumpang){
-          if (penumpang.length == 0){
-            console.log ('Angkot kosong !');
-            return penumpang;
-          }else {
-            for (var i = 0; i < penumpang.length; i++ ){
-              if (penumpang[i] == namaPenumpang){
-                penumpang[i] = undefined;
-                return penumpang;
-              } else if (i == penumpang.length -1){
-                console.log ('Nama penumpang salah!');
-                return penumpang;
-            }
-          }
-          }
-}
-
-    </script>
+    <body>
+        <div class="container">
+            <header class="header">
+                <div class="head">
+                    <h1>Mysticx</h1>
+                </div>
+                
+                <ul class ='menu-bar'>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT ME</a></li>
+                    <li><a href="">SKILLS</a></li>
+                    <li><a href="">FAQ</a></li>
+                </ul>
+            </header>
 
 
+            <nav class="content">
+                <div class="data">
+                    <h2>ABOUT ME</h2>
+                    <p>Halo saya Jefry, umur saya 21 tahun, sekarang saya sedang mempelajari HTML,CSS, dan JS </p>
+                </div>
+
+                <div class="awal">
+                    <h2>Education</h2>
+                        <ul>
+                            <li>TK HARMONI</li>
+                            <li>SD HARMONI</li>
+                            <li>SMP HARMONI</li>
+                            <li>SMK HARMONI</li>
+                        </ul>
+                    </div>
+    
+                    <div class="tengah">
+                        <h2>Experience</h2>
+                        <ul>
+                            <li>PT. Startmara Pratama, Admin claim dan admin gudang : Tahun 2017-2018</li>
+                            <li>PT. Central Batam Raya, Admin Claim : Tahun 2019</li>
+                            <li>PT. Segar Prima Jaya, Accounting : Tahun 2019-Present</li>
+                        </ul>
+                    </div>
+            </nav>
+
+            <div class="riwayat">
+                
+            </div> 
+
+            
+            
+        </div>
 
 
-  </body>
+    </body>
+
 </html>
