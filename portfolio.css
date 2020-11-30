@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Texturina', serif;
+    margin: 0px 50px;
+    background-color: rgb(230, 228, 228);
+}
+
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: orange;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.header .head{
+    font-size: 20px;
+    letter-spacing: 10px;
+    padding: 20px;
+}
+
+.header .menu-bar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+    list-style: none;
+    align-items: center;
+}
+
+.menu-bar a {
+    text-decoration: none;
+    color: white;
+}
+
+/* CONTENT */
+.content {
+    display: grid;
+    grid-template-areas: 'data awal'
+                        'data tengah';
+}
+
+.content .data{
+    display: grid;
+    place-items: center;
+}
+
+.content h2{
+    font-size: 5em;
+}
+
+.content .biodata {
+    font-size: 20px;
+}
+
+.content .data{
+    grid-area: data;
+    justify-items: center;
+    align-content: flex-start;
+    width: 70%;
+}
+
+.content .awal{
+    grid-area: awal;
+}
+
+.content .tengah{
+    grid-area: tengah;
+}
+
+.awal ul {
+    list-style: none;
+}
+
+.tengah ul{
+    list-style: none;
+}
